@@ -1,6 +1,5 @@
 #include <SFML/Graphics.hpp>
 #include <cstdlib>
-#include <ctime>
 
     const int WINDOW_WIDTH = 500;
     const int WINDOW_HEIGHT = 500;
