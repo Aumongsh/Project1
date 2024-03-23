@@ -15,10 +15,7 @@
         return sf::Color(r, g, b);
     }
 
-
     int main() {
-
-
         sf::RenderWindow window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Project_1");
 
         sf::RectangleShape cell(sf::Vector2f(CELL_SIZE, CELL_SIZE));
@@ -28,7 +25,6 @@
         {
             colors[i] = getRandomColor();
         }
-
 
         while (window.isOpen())
         {
@@ -41,19 +37,15 @@
             }
 
             window.clear();
-
+            
             for (int i = 0; i < GRID_SIZE; ++i)
             {
                 for (int j = 0; j < GRID_SIZE; ++j)
                 {
                     cell.setPosition(i * GRID_SIZE, j * GRID_SIZE);
-
                     int randomIndex = rand() % 10;
-
                     cell.setFillColor(colors[randomIndex]);
-
                     window.draw(cell);
-
                 }
             }
 
